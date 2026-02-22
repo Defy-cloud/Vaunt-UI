@@ -4,16 +4,22 @@ A clean, modern Roblox exploit UI library with themes, config system, and full e
 
 ---
 
+## Loadstring
+
+```lua
+local Vaunt = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/Defy-cloud/Vaunt-UI/refs/heads/main/UI%20Library"
+))()
+
+---
 ## Setup
 
 ```lua
-local Vaunt = loadstring(game:HttpGet("YOUR_RAW_URL"))()
-
 local Win = Vaunt:Window({
     Title  = "Hub Name",
-    Icon   = "crown",
-    Footer = "v1.0",
-    Key    = Enum.KeyCode.RightControl,
+    Icon   = "crown",       -- any icon name from the icon list below
+    Footer = "Vaunt UI",
+    Key    = Enum.KeyCode.RightControl, -- toggle window open/close
 })
 ```
 
